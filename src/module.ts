@@ -36,5 +36,10 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
         ],
       },
       showIf: config => config.showSeriesCount,
+    })
+    .addColorPicker({
+      path: 'colors',
+      defaultValue: 'red',
+      name: 'Circle color change',
     });
 });
